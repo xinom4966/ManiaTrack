@@ -5,7 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
-				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset"
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/VehicleTemplate/Maps/VehicleAdvExampleMap.umap"
 			]
 		}
 	]
