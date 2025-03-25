@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <None Include="..\..\ManiaTrack.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{F31BBDD1-B3E8-3BCC-9652-680E16935819}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ManiaTrack.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\ManiaTrackEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEditorPerProjectUserSettings.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Source\ManiaTrack">
+      <UniqueIdentifier>{919D9A17-7207-3F13-B25D-3F448688ECB0}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\ManiaTrack\ManiaTrack.Build.cs">
+      <Filter>Source\ManiaTrack</Filter>
+    </None>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrack.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrack.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackGameMode.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackGameMode.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackOffroadCar.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackOffroadCar.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackOffroadWheelFront.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackOffroadWheelFront.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackOffroadWheelRear.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackOffroadWheelRear.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackPawn.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackPawn.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackPlayerController.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackPlayerController.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackSportsCar.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackSportsCar.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackSportsWheelFront.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackSportsWheelFront.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackSportsWheelRear.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackSportsWheelRear.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackUI.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackUI.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackWheelFront.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackWheelFront.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\ManiaTrackWheelRear.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackWheelRear.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

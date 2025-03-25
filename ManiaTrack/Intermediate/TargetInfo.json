@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "ManiaTrack",
+			"Path": "..\\Source\\ManiaTrack.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "ManiaTrackEditor",
+			"Path": "..\\Source\\ManiaTrackEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

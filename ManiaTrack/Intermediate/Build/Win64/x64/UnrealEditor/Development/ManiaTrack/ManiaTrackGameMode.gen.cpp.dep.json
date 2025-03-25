@@ -1,0 +1,19 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\unrealeditor\\inc\\maniatrack\\uht\\maniatrackgamemode.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\x64\\maniatrackeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\maniatrack\\definitions.maniatrack.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\source\\maniatrack\\maniatrackgamemode.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\unrealeditor\\inc\\maniatrack\\uht\\maniatrackgamemode.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
