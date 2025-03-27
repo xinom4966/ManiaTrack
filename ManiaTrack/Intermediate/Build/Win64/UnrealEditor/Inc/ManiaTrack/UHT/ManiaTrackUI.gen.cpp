@@ -22,6 +22,10 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackUI() {}
 	{
 		float NewSpeed;
 	};
+	struct ManiaTrackUI_eventOnTimerUpdate_Parms
+	{
+		float NewTime;
+	};
 	static FName NAME_UManiaTrackUI_OnGearUpdate = FName(TEXT("OnGearUpdate"));
 	void UManiaTrackUI::OnGearUpdate(int32 NewGear)
 	{
@@ -35,6 +39,13 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackUI() {}
 		ManiaTrackUI_eventOnSpeedUpdate_Parms Parms;
 		Parms.NewSpeed=NewSpeed;
 		ProcessEvent(FindFunctionChecked(NAME_UManiaTrackUI_OnSpeedUpdate),&Parms);
+	}
+	static FName NAME_UManiaTrackUI_OnTimerUpdate = FName(TEXT("OnTimerUpdate"));
+	void UManiaTrackUI::OnTimerUpdate(float NewTime)
+	{
+		ManiaTrackUI_eventOnTimerUpdate_Parms Parms;
+		Parms.NewTime=NewTime;
+		ProcessEvent(FindFunctionChecked(NAME_UManiaTrackUI_OnTimerUpdate),&Parms);
 	}
 	void UManiaTrackUI::StaticRegisterNativesUManiaTrackUI()
 	{
@@ -113,6 +124,37 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackUI() {}
 		}
 		return ReturnFunction;
 	}
+	struct Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics
+	{
+		static const UECodeGen_Private::FFloatPropertyParams NewProp_NewTime;
+		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam Function_MetaDataParams[];
+#endif
+		static const UECodeGen_Private::FFunctionParams FuncParams;
+	};
+	const UECodeGen_Private::FFloatPropertyParams Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::NewProp_NewTime = { "NewTime", nullptr, (EPropertyFlags)0x0010000000000080, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(ManiaTrackUI_eventOnTimerUpdate_Parms, NewTime), METADATA_PARAMS(0, nullptr) };
+	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::PropPointers[] = {
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::NewProp_NewTime,
+	};
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::Function_MetaDataParams[] = {
+		{ "Category", "Vehicle" },
+		{ "ModuleRelativePath", "ManiaTrackUI.h" },
+	};
+#endif
+	const UECodeGen_Private::FFunctionParams Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::FuncParams = { (UObject*(*)())Z_Construct_UClass_UManiaTrackUI, nullptr, "OnTimerUpdate", nullptr, nullptr, Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::PropPointers, UE_ARRAY_COUNT(Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::PropPointers), sizeof(ManiaTrackUI_eventOnTimerUpdate_Parms), RF_Public|RF_Transient|RF_MarkAsNative, (EFunctionFlags)0x08080800, 0, 0, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::Function_MetaDataParams), Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::Function_MetaDataParams) };
+	static_assert(UE_ARRAY_COUNT(Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::PropPointers) < 2048);
+	static_assert(sizeof(ManiaTrackUI_eventOnTimerUpdate_Parms) < MAX_uint16);
+	UFunction* Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate()
+	{
+		static UFunction* ReturnFunction = nullptr;
+		if (!ReturnFunction)
+		{
+			UECodeGen_Private::ConstructUFunction(&ReturnFunction, Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate_Statics::FuncParams);
+		}
+		return ReturnFunction;
+	}
 	IMPLEMENT_CLASS_NO_AUTO_REGISTRATION(UManiaTrackUI);
 	UClass* Z_Construct_UClass_UManiaTrackUI_NoRegister()
 	{
@@ -142,6 +184,7 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackUI() {}
 	const FClassFunctionLinkInfo Z_Construct_UClass_UManiaTrackUI_Statics::FuncInfo[] = {
 		{ &Z_Construct_UFunction_UManiaTrackUI_OnGearUpdate, "OnGearUpdate" }, // 1634939794
 		{ &Z_Construct_UFunction_UManiaTrackUI_OnSpeedUpdate, "OnSpeedUpdate" }, // 3406838011
+		{ &Z_Construct_UFunction_UManiaTrackUI_OnTimerUpdate, "OnTimerUpdate" }, // 3637179868
 	};
 	static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UManiaTrackUI_Statics::FuncInfo) < 2048);
 #if WITH_METADATA
@@ -215,9 +258,9 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackUI() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackUI_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_UManiaTrackUI, UManiaTrackUI::StaticClass, TEXT("UManiaTrackUI"), &Z_Registration_Info_UClass_UManiaTrackUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UManiaTrackUI), 2020028539U) },
+		{ Z_Construct_UClass_UManiaTrackUI, UManiaTrackUI::StaticClass, TEXT("UManiaTrackUI"), &Z_Registration_Info_UClass_UManiaTrackUI, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UManiaTrackUI), 1371036363U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackUI_h_4146003800(TEXT("/Script/ManiaTrack"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackUI_h_1357616289(TEXT("/Script/ManiaTrack"),
 		Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackUI_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackUI_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

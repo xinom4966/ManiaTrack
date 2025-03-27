@@ -1,0 +1,13 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\unrealeditor\\inc\\maniatrack\\uht\\maniatrack.init.gen.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\x64\\maniatrackeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\maniatrack\\definitions.maniatrack.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

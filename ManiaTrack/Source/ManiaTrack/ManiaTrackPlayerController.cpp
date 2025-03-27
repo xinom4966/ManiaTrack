@@ -44,3 +44,7 @@ void AManiaTrackPlayerController::OnPossess(APawn* InPawn)
 	// get a pointer to the controlled pawn
 	VehiclePawn = CastChecked<AManiaTrackPawn>(InPawn);
 }
+
+TObjectPtr<UManiaTrackUI> AManiaTrackPlayerController::GetVehicleUI() {
+	return VehicleUI;
+}

@@ -3,6 +3,7 @@
 #pragma once
 
 #include "CoreMinimal.h"
+#include "Timer.h"
 #include "WheeledVehiclePawn.h"
 #include "ManiaTrackPawn.generated.h"
 
@@ -78,6 +79,18 @@ protected:
 	/** Keeps track of which camera is active */
 	bool bFrontCameraActive = false;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Respawn)
+	FVector ResetLocation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Respawn)
+	FRotator ResetRotation;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Timer)
+	bool timerStarted;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Timer)
+	ATimer* timerActor;
+
 public:
 	AManiaTrackPawn();
 
@@ -90,6 +103,8 @@ public:
 	// Begin Actor interface
 
 	virtual void Tick(float Delta) override;
+
+	virtual void BeginPlay() override;
 
 	// End Actor interface
 
@@ -124,6 +139,8 @@ protected:
 	/** Called when the brake lights are turned on or off */
 	UFUNCTION(BlueprintImplementableEvent, Category="Vehicle")
 	void BrakeLights(bool bBraking);
+
+	void StartTimer();
 
 public:
 	/** Returns the front spring arm subobject */

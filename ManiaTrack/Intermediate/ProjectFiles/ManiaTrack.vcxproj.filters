@@ -11,6 +11,7 @@
     <None Include="..\..\Source\ManiaTrackEditor.Target.cs">
       <Filter>Source</Filter>
     </None>
+    <None Include="..\..\.vsconfig" />
     <Filter Include="Config">
       <UniqueIdentifier>{FA535FFB-25E1-3D20-B416-52F9BE21E06E}</UniqueIdentifier>
     </Filter>
@@ -111,6 +112,12 @@
       <Filter>Source\ManiaTrack</Filter>
     </ClCompile>
     <ClInclude Include="..\..\Source\ManiaTrack\ManiaTrackWheelRear.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
+    <ClCompile Include="..\..\Source\ManiaTrack\Timer.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\Timer.h">
       <Filter>Source\ManiaTrack</Filter>
     </ClInclude>
   </ItemGroup>

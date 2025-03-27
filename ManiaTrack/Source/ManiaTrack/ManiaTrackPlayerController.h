@@ -44,6 +44,8 @@ public:
 
 	virtual void Tick(float Delta) override;
 
+	TObjectPtr<UManiaTrackUI> GetVehicleUI();
+
 	// End Actor interface
 
 	// Begin PlayerController interface

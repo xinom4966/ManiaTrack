@@ -6,7 +6,17 @@
 			"description": "Default Uncontrolled Changelist",
 			"files": [
 				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/StarterContent/Maps/Advanced_Lighting_BuiltData.uasset",
-				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/VehicleTemplate/Maps/VehicleAdvExampleMap.umap"
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/VehicleTemplate/Maps/VehicleAdvExampleMap.umap",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/VehicleTemplate/Blueprints/SportsCar/SportsCar_TorqueCurve.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/6/A7/A7MFUY6LBUDVXPNCIM36R2.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/A/3L/D1Z34WD02M35JRNH3OPD0X.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/3/52/TT57P0QWSSCN5ZT7K1FMH1.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/F/01/AGC5I9PWT9DB38ULGQR57A.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/VehicleTemplate/Blueprints/SportsCar/BP_SportsCar_Pawn.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleOffroadExampleMap/C/4X/TFUEUCY1IFT2LEF8SGF0FC.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/VehicleTemplate/Blueprints/W_VehicleAdvUI.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/VehicleTemplate/Blueprints/BP_Timer.uasset",
+				"C:/Users/sddes/Documents/GitHub/ManiaTrack/ManiaTrack/Content/__ExternalActors__/VehicleTemplate/Maps/VehicleAdvExampleMap/1/XV/6FTSUJN8ZUTAZN7BQUNVA3.uasset"
 			]
 		}
 	]

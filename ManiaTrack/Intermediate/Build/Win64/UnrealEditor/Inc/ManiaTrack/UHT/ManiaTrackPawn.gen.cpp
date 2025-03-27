@@ -10,11 +10,14 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeManiaTrackPawn() {}
 // Cross Module References
 	CHAOSVEHICLES_API UClass* Z_Construct_UClass_AWheeledVehiclePawn();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FRotator();
+	COREUOBJECT_API UScriptStruct* Z_Construct_UScriptStruct_FVector();
 	ENGINE_API UClass* Z_Construct_UClass_UCameraComponent_NoRegister();
 	ENGINE_API UClass* Z_Construct_UClass_USpringArmComponent_NoRegister();
 	ENHANCEDINPUT_API UClass* Z_Construct_UClass_UInputAction_NoRegister();
 	MANIATRACK_API UClass* Z_Construct_UClass_AManiaTrackPawn();
 	MANIATRACK_API UClass* Z_Construct_UClass_AManiaTrackPawn_NoRegister();
+	MANIATRACK_API UClass* Z_Construct_UClass_ATimer_NoRegister();
 	UPackage* Z_Construct_UPackage__Script_ManiaTrack();
 // End Cross Module References
 	struct ManiaTrackPawn_eventBrakeLights_Parms
@@ -129,6 +132,23 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackPawn() {}
 		static const UECodeGen_Private::FMetaDataPairParam NewProp_ResetVehicleAction_MetaData[];
 #endif
 		static const UECodeGen_Private::FObjectPropertyParams NewProp_ResetVehicleAction;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ResetLocation_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ResetLocation;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_ResetRotation_MetaData[];
+#endif
+		static const UECodeGen_Private::FStructPropertyParams NewProp_ResetRotation;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_timerStarted_MetaData[];
+#endif
+		static void NewProp_timerStarted_SetBit(void* Obj);
+		static const UECodeGen_Private::FBoolPropertyParams NewProp_timerStarted;
+#if WITH_METADATA
+		static const UECodeGen_Private::FMetaDataPairParam NewProp_timerActor_MetaData[];
+#endif
+		static const UECodeGen_Private::FObjectPropertyParams NewProp_timerActor;
 		static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UECodeGen_Private::FClassParams ClassParams;
@@ -306,6 +326,38 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackPawn() {}
 	};
 #endif
 	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetVehicleAction = { "ResetVehicleAction", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AManiaTrackPawn, ResetVehicleAction), Z_Construct_UClass_UInputAction_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetVehicleAction_MetaData), Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetVehicleAction_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetLocation_MetaData[] = {
+		{ "Category", "Respawn" },
+		{ "ModuleRelativePath", "ManiaTrackPawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetLocation = { "ResetLocation", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AManiaTrackPawn, ResetLocation), Z_Construct_UScriptStruct_FVector, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetLocation_MetaData), Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetLocation_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetRotation_MetaData[] = {
+		{ "Category", "Respawn" },
+		{ "ModuleRelativePath", "ManiaTrackPawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FStructPropertyParams Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetRotation = { "ResetRotation", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Struct, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AManiaTrackPawn, ResetRotation), Z_Construct_UScriptStruct_FRotator, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetRotation_MetaData), Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetRotation_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerStarted_MetaData[] = {
+		{ "Category", "Timer" },
+		{ "ModuleRelativePath", "ManiaTrackPawn.h" },
+	};
+#endif
+	void Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerStarted_SetBit(void* Obj)
+	{
+		((AManiaTrackPawn*)Obj)->timerStarted = 1;
+	}
+	const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerStarted = { "timerStarted", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Bool | UECodeGen_Private::EPropertyGenFlags::NativeBool, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(bool), sizeof(AManiaTrackPawn), &Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerStarted_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerStarted_MetaData), Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerStarted_MetaData) };
+#if WITH_METADATA
+	const UECodeGen_Private::FMetaDataPairParam Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerActor_MetaData[] = {
+		{ "Category", "Timer" },
+		{ "ModuleRelativePath", "ManiaTrackPawn.h" },
+	};
+#endif
+	const UECodeGen_Private::FObjectPropertyParams Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerActor = { "timerActor", nullptr, (EPropertyFlags)0x0020080000000015, UECodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(AManiaTrackPawn, timerActor), Z_Construct_UClass_ATimer_NoRegister, METADATA_PARAMS(UE_ARRAY_COUNT(Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerActor_MetaData), Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerActor_MetaData) };
 	const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_AManiaTrackPawn_Statics::PropPointers[] = {
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_FrontSpringArm,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_FrontCamera,
@@ -318,6 +370,10 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackPawn() {}
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_LookAroundAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ToggleCameraAction,
 		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetVehicleAction,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetLocation,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_ResetRotation,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerStarted,
+		(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_AManiaTrackPawn_Statics::NewProp_timerActor,
 	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_AManiaTrackPawn_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<AManiaTrackPawn>::IsAbstract,
@@ -357,9 +413,9 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackPawn() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackPawn_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AManiaTrackPawn, AManiaTrackPawn::StaticClass, TEXT("AManiaTrackPawn"), &Z_Registration_Info_UClass_AManiaTrackPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManiaTrackPawn), 483187406U) },
+		{ Z_Construct_UClass_AManiaTrackPawn, AManiaTrackPawn::StaticClass, TEXT("AManiaTrackPawn"), &Z_Registration_Info_UClass_AManiaTrackPawn, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManiaTrackPawn), 782634469U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackPawn_h_4184392173(TEXT("/Script/ManiaTrack"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackPawn_h_3286246325(TEXT("/Script/ManiaTrack"),
 		Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackPawn_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackPawn_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

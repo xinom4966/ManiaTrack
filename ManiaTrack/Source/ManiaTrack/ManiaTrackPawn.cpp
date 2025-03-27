@@ -107,6 +107,14 @@ void AManiaTrackPawn::Tick(float Delta)
 	BackSpringArm->SetRelativeRotation(FRotator(0.0f, CameraYaw, 0.0f));
 }
 
+void AManiaTrackPawn::BeginPlay() {
+	Super::BeginPlay();
+	ResetLocation = GetActorLocation();
+	ResetRotation = GetActorRotation();
+	ResetRotation.Pitch = 0.0f;
+	ResetRotation.Roll = 0.0f;
+}
+
 void AManiaTrackPawn::Steering(const FInputActionValue& Value)
 {
 	// get the input magnitude for steering
@@ -118,6 +126,11 @@ void AManiaTrackPawn::Steering(const FInputActionValue& Value)
 
 void AManiaTrackPawn::Throttle(const FInputActionValue& Value)
 {
+	if (!timerStarted) {
+		timerStarted = true;
+		StartTimer();
+	}
+
 	// get the input magnitude for the throttle
 	float ThrottleValue = Value.Get<float>();
 
@@ -186,22 +199,20 @@ void AManiaTrackPawn::ToggleCamera(const FInputActionValue& Value)
 }
 
 void AManiaTrackPawn::ResetVehicle(const FInputActionValue& Value)
-{
-	// reset to a location slightly above our current one
-	FVector ResetLocation = GetActorLocation() + FVector(0.0f, 0.0f, 50.0f);
-
-	// reset to our yaw. Ignore pitch and roll
-	FRotator ResetRotation = GetActorRotation();
-	ResetRotation.Pitch = 0.0f;
-	ResetRotation.Roll = 0.0f;
-	
+{	
 	// teleport the actor to the reset spot and reset physics
 	SetActorTransform(FTransform(ResetRotation, ResetLocation, FVector::OneVector), false, nullptr, ETeleportType::TeleportPhysics);
 
 	GetMesh()->SetPhysicsAngularVelocityInDegrees(FVector::ZeroVector);
 	GetMesh()->SetPhysicsLinearVelocity(FVector::ZeroVector);
 
-	UE_LOG(LogTemplateVehicle, Error, TEXT("Reset Vehicle"));
+	timerActor->Destroy();
+	timerStarted = false;
+}
+
+void AManiaTrackPawn::StartTimer() {
+	//Spawn timer actor
+	timerActor = GetWorld()->SpawnActor<ATimer>();
 }
 
 #undef LOCTEXT_NAMESPACE
