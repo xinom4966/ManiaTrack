@@ -33,6 +33,12 @@
     <Filter Include="Source\ManiaTrack">
       <UniqueIdentifier>{919D9A17-7207-3F13-B25D-3F448688ECB0}</UniqueIdentifier>
     </Filter>
+    <ClCompile Include="..\..\Source\ManiaTrack\CheckPoint.cpp">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClCompile>
+    <ClInclude Include="..\..\Source\ManiaTrack\CheckPoint.h">
+      <Filter>Source\ManiaTrack</Filter>
+    </ClInclude>
     <None Include="..\..\Source\ManiaTrack\ManiaTrack.Build.cs">
       <Filter>Source\ManiaTrack</Filter>
     </None>

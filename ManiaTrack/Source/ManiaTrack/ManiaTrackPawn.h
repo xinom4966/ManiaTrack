@@ -76,6 +76,9 @@ protected:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
 	UInputAction* ResetVehicleAction;
 
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Input)
+	UInputAction* RespawnAction;
+
 	/** Keeps track of which camera is active */
 	bool bFrontCameraActive = false;
 
@@ -90,6 +93,15 @@ protected:
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Timer)
 	ATimer* timerActor;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CheckPoint)
+	FVector checkPoint;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CheckPoint)
+	FRotator checkPointRot;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = CheckPoint)
+	FVector checkPointSpeed;
 
 public:
 	AManiaTrackPawn();
@@ -107,6 +119,12 @@ public:
 	virtual void BeginPlay() override;
 
 	// End Actor interface
+
+	void Respawn(const FInputActionValue& Value);
+
+	void SetCheckPoint();
+
+	bool isReset;
 
 protected:
 

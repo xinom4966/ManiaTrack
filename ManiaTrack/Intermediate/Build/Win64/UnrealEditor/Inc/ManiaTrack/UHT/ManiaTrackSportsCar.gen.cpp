@@ -86,9 +86,9 @@ void EmptyLinkFunctionForGeneratedCodeManiaTrackSportsCar() {}
 		static const FClassRegisterCompiledInInfo ClassInfo[];
 	};
 	const FClassRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackSportsCar_h_Statics::ClassInfo[] = {
-		{ Z_Construct_UClass_AManiaTrackSportsCar, AManiaTrackSportsCar::StaticClass, TEXT("AManiaTrackSportsCar"), &Z_Registration_Info_UClass_AManiaTrackSportsCar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManiaTrackSportsCar), 1111048859U) },
+		{ Z_Construct_UClass_AManiaTrackSportsCar, AManiaTrackSportsCar::StaticClass, TEXT("AManiaTrackSportsCar"), &Z_Registration_Info_UClass_AManiaTrackSportsCar, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(AManiaTrackSportsCar), 3969210065U) },
 	};
-	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackSportsCar_h_38691793(TEXT("/Script/ManiaTrack"),
+	static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackSportsCar_h_4030582199(TEXT("/Script/ManiaTrack"),
 		Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackSportsCar_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_Users_sddes_Documents_GitHub_ManiaTrack_ManiaTrack_Source_ManiaTrack_ManiaTrackSportsCar_h_Statics::ClassInfo),
 		nullptr, 0,
 		nullptr, 0);

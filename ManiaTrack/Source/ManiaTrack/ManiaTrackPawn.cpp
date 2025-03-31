@@ -51,6 +51,7 @@ AManiaTrackPawn::AManiaTrackPawn()
 
 	// get the Chaos Wheeled movement component
 	ChaosVehicleMovement = CastChecked<UChaosWheeledVehicleMovementComponent>(GetVehicleMovement());
+	isReset = true;
 
 }
 
@@ -85,6 +86,8 @@ void AManiaTrackPawn::SetupPlayerInputComponent(class UInputComponent* PlayerInp
 
 		// reset the vehicle 
 		EnhancedInputComponent->BindAction(ResetVehicleAction, ETriggerEvent::Triggered, this, &AManiaTrackPawn::ResetVehicle);
+
+		EnhancedInputComponent->BindAction(RespawnAction, ETriggerEvent::Triggered, this, &AManiaTrackPawn::Respawn);
 	}
 	else
 	{
@@ -113,6 +116,11 @@ void AManiaTrackPawn::BeginPlay() {
 	ResetRotation = GetActorRotation();
 	ResetRotation.Pitch = 0.0f;
 	ResetRotation.Roll = 0.0f;
+	checkPoint = GetActorLocation();
+	checkPointRot = GetActorRotation();
+	checkPointRot.Pitch = 0.0f;
+	checkPointRot.Roll = 0.0f;
+	checkPointSpeed = GetVelocity();
 }
 
 void AManiaTrackPawn::Steering(const FInputActionValue& Value)
@@ -208,6 +216,22 @@ void AManiaTrackPawn::ResetVehicle(const FInputActionValue& Value)
 
 	timerActor->Destroy();
 	timerStarted = false;
+	isReset = true;
+}
+
+void AManiaTrackPawn::Respawn(const FInputActionValue& Value) {
+	if (isReset) {
+		return;
+	}
+	SetActorTransform(FTransform(checkPointRot, checkPoint, FVector::OneVector), false, nullptr, ETeleportType::TeleportPhysics);
+	GetMesh()->SetPhysicsLinearVelocity(checkPointSpeed);
+}
+
+void AManiaTrackPawn::SetCheckPoint() {
+	checkPoint = GetActorLocation();
+	checkPointRot = GetActorRotation();
+	checkPointSpeed = GetVelocity();
+	isReset = false;
 }
 
 void AManiaTrackPawn::StartTimer() {

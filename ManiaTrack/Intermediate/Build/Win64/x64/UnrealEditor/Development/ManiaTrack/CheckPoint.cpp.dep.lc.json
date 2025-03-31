@@ -1,0 +1,27 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\source\\maniatrack\\checkpoint.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\x64\\maniatrackeditor\\development\\unrealed\\sharedpch.unrealed.cpp20.h.pch",
+        "Includes": [
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\maniatrack\\definitions.maniatrack.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\source\\maniatrack\\checkpoint.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\unrealeditor\\inc\\maniatrack\\uht\\checkpoint.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\boxcomponent.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\source\\runtime\\engine\\classes\\components\\shapecomponent.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\shapecomponent.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\boxcomponent.generated.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\source\\maniatrack\\maniatrackpawn.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\source\\maniatrack\\timer.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\source\\maniatrack\\maniatrackplayercontroller.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\unrealeditor\\inc\\maniatrack\\uht\\maniatrackplayercontroller.generated.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\unrealeditor\\inc\\maniatrack\\uht\\timer.generated.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\chaosvehiclesplugin\\source\\chaosvehicles\\public\\wheeledvehiclepawn.h",
+            "c:\\program files\\epic games\\ue_5.3\\engine\\plugins\\experimental\\chaosvehiclesplugin\\intermediate\\build\\win64\\unrealeditor\\inc\\chaosvehicles\\uht\\wheeledvehiclepawn.generated.h",
+            "c:\\users\\sddes\\documents\\github\\maniatrack\\maniatrack\\intermediate\\build\\win64\\unrealeditor\\inc\\maniatrack\\uht\\maniatrackpawn.generated.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}
